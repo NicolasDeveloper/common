@@ -1,4 +1,4 @@
-module easymile-tracker/common
+module github.com/NicolasDeveloper/common
 
 go 1.13
 

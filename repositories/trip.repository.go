@@ -9,7 +9,7 @@ import (
 )
 
 // Save the trip
-func Save(trip *models.Trip) error {
+func Save(trip models.Trip) error {
 	client := database.Connection()
 	collection := client.Database("easymile").Collection("trip")
 	insertResult, err := collection.InsertOne(context.TODO(), trip)
